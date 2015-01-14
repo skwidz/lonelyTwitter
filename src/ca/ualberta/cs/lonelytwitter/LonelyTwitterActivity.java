@@ -49,6 +49,18 @@ public class LonelyTwitterActivity extends Activity {
 	@Override
 	protected void onStart() {
 		// TODO Auto-generated method stub
+		
+		User u = new Author("joe");
+		
+		u.getName();
+		try{
+			u.setName("Othername ");
+		} catch (IOException e) {
+			// TODO: handle exception
+		}
+		
+		ArrayList<User> users = new ArrayList<User>();
+		
 		super.onStart();
 		String[] tweets = loadFromFile();
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,

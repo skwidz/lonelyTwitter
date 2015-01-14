@@ -16,7 +16,7 @@ public abstract class LonelyTweetModel {
 	}
 	
 	public LonelyTweetModel(String text, Date timestamp) {
-		super();
+		super(); // constructor of the superclass
 		this.text = text;
 		this.timestamp = timestamp;
 	}
